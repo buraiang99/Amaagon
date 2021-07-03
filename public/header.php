@@ -8,15 +8,24 @@
         <link rel="stylesheet" href="../public/css/main.css">
         <script type="text/javascript" src="../public/js/jquery.js"></script>
         
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8HTFCT5SP%22%3E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z8HTFCT5SP');
+</script>
         
     </head>
     <body>
                    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js%22%3E</script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js%22%3E"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js%22%3E</script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js%22%3E"></script>
 
 <script>
   // Your web app's Firebase configuration
