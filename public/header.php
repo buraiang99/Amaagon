@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../public/css/bootstrap.min.css">
         <link rel="stylesheet" href="../public/css/main.css">
-        <script type="text/javascript" src="../public/js/jquery.js"></script>
+        <script type="text/javascript" src="public/js/jquery.js"></script>
         
     </head>
     <body>
