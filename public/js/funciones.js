@@ -63,7 +63,7 @@ function regitrarUsuario(nombre, contrasenna, direccion, edad) {
   $.ajax({
     type: "POST",
     data: parametros,
-    url: "http://127.0.0.1:80/APIREST/API/usuarioAPI.php",
+    url: "https://lenguajesproyecto2.000webhostapp.com/API/usuarioAPI.php",
   }).then(function (data) {
     $("#resultado").html(data);
   });
@@ -75,7 +75,7 @@ function iniciarSesionUsuario(nombre, contrasenna) {
   $.ajax({
     type: "GET",
     data: parametros,
-    url: "http://127.0.0.1:80/APIREST/API/usuarioAPI.php",
+    url: "https://lenguajesproyecto2.000webhostapp.com/API/usuarioAPI.php",
   }).then(function (data) {
     //console.log("Entrada: "+data);
     var producto = JSON.parse(data);
@@ -142,7 +142,7 @@ function mostrarProductos(producto) {
   $.ajax({
     type: "GET",
     data: parametros,
-    url: "http://127.0.0.1:80/APIREST/API/productoAPI.php",
+    url: "https://lenguajesproyecto2.000webhostapp.com/API/productoAPI.php",
   }).then(function (data) {
     var producto = JSON.parse(data);
     //console.log(producto);
@@ -176,7 +176,7 @@ function abrirCarrito(id_Usuario) {
       $.ajax({
         type: "GET",
         data: parametros,
-        url: "http://127.0.0.1:80/APIREST/API/carritoAPI.php",
+        url: "https://lenguajesproyecto2.000webhostapp.com/API/carritoAPI.php",
       }).then(function (data) {
         var producto = JSON.parse(data);
         let res = document.querySelector("#tbodyCarrito");
@@ -218,7 +218,7 @@ function agregarAlCarrito(id_producto, total) {
       );*/
       $.ajax({
         type: "POST",
-        url: "http://127.0.0.1:80/APIREST/API/carritoAPI.php",
+        url: "https://lenguajesproyecto2.000webhostapp.com/API/carritoAPI.php",
         data: parametros,
       }).then(function (data) {
         //console.log(data);
@@ -295,7 +295,7 @@ function mostrarCategoria() {
   $.ajax({
     type: "GET",
     data: null,
-    url: "http://127.0.0.1:80/APIREST/API/categoriaAPI.php",
+    url: "https://lenguajesproyecto2.000webhostapp.com/API/categoriaAPI.php",
   }).then(function (data) {
     var datos = JSON.parse(data);
     let res = document.querySelector("#tbodyCategoria");
@@ -328,7 +328,7 @@ function eliminarCarrito(id_producto) {
       $.ajax({
         //method: "DELETE",
         type: "GET",
-        url: "http://127.0.0.1:80/APIREST/API/carritoAPI.php",
+        url: "https://lenguajesproyecto2.000webhostapp.com/API/carritoAPI.php",
         data: parametros,
       }).then(function (data) {
        //console.log(data);
@@ -350,7 +350,7 @@ function checkout() {
       $.ajax({
         type: "GET",
         data: data,
-        url: "http://127.0.0.1:80/APIREST/API/checkoutAPI.php",
+        url: "https://lenguajesproyecto2.000webhostapp.com/API/checkoutAPI.php",
       }).then(function (data) {
         //console.log(data);
         var datos = parseInt(data, 10);
@@ -394,7 +394,7 @@ function finalizarPago() {
       $.ajax({
         type: "GET",
         data: parametros,
-        url: "http://127.0.0.1:80/APIREST/API/carritoAPI.php",
+        url: "https://lenguajesproyecto2.000webhostapp.com/API/carritoAPI.php",
       }).then(function (data) {
         var producto = JSON.parse(data);
         var total = 0;
@@ -407,7 +407,7 @@ function finalizarPago() {
         $.ajax({
           type: "POST",
           data: parametros,
-          url: "http://127.0.0.1:80/APIREST/API/ordenAPI.php",
+          url: "https://lenguajesproyecto2.000webhostapp.com/API/ordenAPI.php",
         }).then(function (data) {
           //var producto = JSON.parse(data);
           var total = parseInt(data);
