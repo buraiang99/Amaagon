@@ -26,7 +26,7 @@
                         <li class="nav-item"><a class="nav-link" href="../view/iniciarSesionUsuarioView.php">Iniciar Sesion</a></li>
                         <li class="nav-item"><a class="nav-link" href="../view/sesionCerrada.php">Cerrar Sesion</a></li>
                         <li class="nav-item"><a class="nav-link" href="../view/IniciarAdministrador.php">Admin</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../view/historialView.php">Historial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="view/historialView.php">Historial</a></li>
                         <?php
                             session_start();
                             if ($_SESSION['id_usuario'] == null) {
