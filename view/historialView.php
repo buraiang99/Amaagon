@@ -6,7 +6,7 @@ include_once '../public/header.php';
     function mostrarArticulos() {
       $.ajax({
         data: null,
-        url: '../?controlador=Usuario&accion=obtenerIDUsuario',
+        url: '?controlador=Usuario&accion=obtenerIDUsuario',
         type: 'POST',
         success: function(data) {
           idUsuarioSesion = parseInt(data, 10)
