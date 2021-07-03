@@ -16,7 +16,7 @@ include_once '../public/header.php';
           $.ajax({
             type: "GET",
             data: parametros,
-            url: "http://127.0.0.1:80/APIREST/API/historialAPI.php",
+            url: "https://lenguajesproyecto2.000webhostapp.com/API/historialAPI.php",
           }).then(function(data) {
             //console.log("Entrada: " + data);
             var producto = JSON.parse(data)
