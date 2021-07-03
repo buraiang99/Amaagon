@@ -1,6 +1,6 @@
-<script src="./public/js/popper.min.js"></script>
-<script src="./public/js/bootstrap.min.js"></script>
-<script src="./public/js/funciones.js"></script>
+<script src="../public/js/popper.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/js/funciones.js"></script>
 <footer class="bg-dark text-white py-4">
     <div class="container text-md-left">
         <nav class="row">
