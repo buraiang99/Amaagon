@@ -1,14 +1,7 @@
 <script src="../public/js/popper.min.js"></script>
 <script src="../public/js/bootstrap.min.js"></script>
 <script src="../public/js/funciones.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8HTFCT5SP%22%3E</script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'G-Z8HTFCT5SP');
-        </script>
 <footer class="bg-dark text-white py-4">
     <div class="container text-md-left">
         <nav class="row">
