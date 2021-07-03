@@ -7,7 +7,7 @@ include_once '../public/adminHeader.php'
     $.ajax({
       type: "GET",
       data: null,
-      url: "http://127.0.0.1:80/APIREST/API/categoriaAPI.php",
+      url: "https://lenguajesproyecto2.000webhostapp.com/API/categoriaAPI.php",
     }).then(function(data) {
       var producto = JSON.parse(data)
       let res = document.querySelector('#listaCategorias');
